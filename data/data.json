@@ -1,0 +1,43 @@
+{
+  "name": "World",
+  "children": [
+    {
+      "name": "Asia",
+      "children": [
+        { "name": "China", "value": 1409517397 },
+        { "name": "India", "value": 1339180127 },
+        { "name": "Indonesia", "value": 263991379 },
+        { "name": "Pakistan", "value": 197015955 },
+        { "name": "Bangladesh", "value": 164669751 },
+        { "name": "Japan", "value": 127484450 },
+        { "name": "Philippines", "value": 104918090 },
+        { "name": "Vietnam", "value": 95540800 }
+      ]
+    },
+    {
+      "name": "Europe",
+      "children": [
+        { "name": "Russia", "value": 143989754 },
+        { "name": "Germany", "value": 82114224 }
+      ]
+    },
+    {
+      "name": "Americas",
+      "value": 0,
+      "color": "orange",
+      "children": [
+        { "name": "United States", "value": 324459463, "color": "#333" },
+        { "name": "Brazil", "value": 209288278 },
+        { "name": "Mexico", "value": 129163276 }
+      ]
+    },
+    {
+      "name": "Africa",
+      "children": [
+        { "name": "Nigeria", "value": 190886311 },
+        { "name": "Ethiopia", "value": 104957438 },
+        { "name": "Egypt", "value": 97553151 }
+      ]
+    }
+  ]
+}

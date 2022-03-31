@@ -1,6 +1,6 @@
 import * as d3 from "d3";
 
-import data from "../data/flare-2.json";
+import data from "../data/data.json";
 
 const partition = (data) => {
   const root = d3
@@ -18,7 +18,7 @@ const format = d3.format(",d");
 
 const width = 932;
 
-const radius = width / 6;
+const radius = width / 12;
 
 const arc = d3
   .arc()
@@ -37,7 +37,7 @@ function makeChart() {
   const svg = d3
     .create("svg")
     .attr("viewBox", [0, 0, width, width])
-    .style("font", "10px sans-serif");
+    .style("font", "7px sans-serif");
 
   const g = svg
     .append("g")
@@ -84,7 +84,16 @@ function makeChart() {
     .attr("dy", "0.35em")
     .attr("fill-opacity", (d) => +labelVisible(d.current))
     .attr("transform", (d) => labelTransform(d.current))
-    .text((d) => d.data.name);
+    .text((d) => {
+      console.log(d.name, d.value);
+      return d.data.name;
+    })
+    .append("tspan")
+    .attr("x", 0)
+    .attr("y", "1.5em")
+    .attr("font-weight", 300)
+    .attr("fill-opacity", 0.5)
+    .text((d) => format(d.value));
 
   const parent = g
     .append("circle")
