@@ -85,15 +85,15 @@ function makeChart() {
     .attr("fill-opacity", (d) => +labelVisible(d.current))
     .attr("transform", (d) => labelTransform(d.current))
     .text((d) => {
-      console.log(d.name, d.value);
       return d.data.name;
-    })
-    .append("tspan")
-    .attr("x", 0)
-    .attr("y", "1.5em")
-    .attr("font-weight", 300)
-    .attr("fill-opacity", 0.5)
-    .text((d) => format(d.value));
+    });
+  // .append("tspan")
+  // .attr("x", "0")
+  // .attr("dy", "1em")
+  // .attr("font-weight", 400)
+  // .attr("fill-opacity", (d) => +labelVisible(d.current))
+  // .attr("transform", (d) => labelTransform(d.current))
+  // .text((d) => format(d.value));
 
   const parent = g
     .append("circle")
