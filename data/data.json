@@ -18,7 +18,12 @@
       "name": "Europe",
       "children": [
         { "name": "Russia", "value": 143989754 },
-        { "name": "Germany", "value": 82114224 }
+        { "name": "Germany", "value": 82114224 },
+        { "name": "United Kindom", "value": 67886011 },
+        { "name": "France", "value": 65273511 },
+        { "name": "Italy", "value": 60461826 },
+        { "name": "Spain", "value": 46754778 },
+        { "name": "Ukraine", "value": 43733762 }
       ]
     },
     {
